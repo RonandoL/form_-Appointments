@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Appointments</title>
+  </head>
+
+<!-- name  date  start-time  end-time -->
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h3>Appointments</h3>
+        <h4 class="italic">Sign up, get in line, then wait</h4>
+      </div>
+
+      <!-- Add Name, Date, Time -->
+      <div id="blanks">
+        <div class="row">
+          <form>
+
+            <!-- Name -->
+            <div class="form-group col-md-4">
+              <label for="name">Name</label>
+              <input id="name" name="name" class="form-control" type="text" placeholder="John T Smith">
+            </div>
+
+            <!-- Date -->
+            <div class="form-group col-md-3">
+              <label for="date">Date</label>
+              <input id="date" name="date" class="form-control" type="text" placeholder="March 3, 2016">
+            </div>
+
+            <!-- Start Time -->
+            <div class="form-group col-sm-2">
+              <label for="start_time">Start Time</label>
+              <input id="start_time" name="start_time" class="form-control" type="text" placeholder="3:15 PM"></input>
+            </div>
+
+            <!-- End Time -->
+            <div class="form-group col-sm-2">
+              <label for="end_time">End Time</label>
+              <input id="end_time" name="end_time" class="form-control" type="text" placeholder="4:15 PM" >
+            </div>
+
+            <!-- Button -->
+            <div class="col-sm-1">
+              <button class="btn btn-sm btn-info">Submit</button>
+            </div>
+
+          </form>
+        </div>
+      </div>  <!-- /id="blanks" -->
+
+      <hr>
+
+      <div id="schedule">
+        <h3>Your appointment has been scheduled for:</h3>
+        <div class="col-sm-4 border">
+          <p><strong><span class="name"></span> on <span class="date"></span></strong></p>
+          <p><span class="start_time"></span>: Start Time</p>
+          <p><span class="end_time"></span>: End Time</p>
+        </div>
+      </div>
+
+    </div>  <!-- /container -->
+
+
+  </body>
+</html>

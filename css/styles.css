@@ -1,0 +1,24 @@
+.italic {
+  font-style: italic;
+  color: #a1a1a1;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.border {
+  border: 1px solid #d8d8d8;
+}
+
+button {
+  margin-top: 25px;
+}
+
+hr {
+  width: 90%;
+}
+
+#schedule {
+  display: none;
+}
